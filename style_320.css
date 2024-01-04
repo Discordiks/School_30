@@ -1,0 +1,192 @@
+@media screen and (max-width:320px) {
+    .header {
+        display: none;
+    }
+
+    .header__mobile {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        background: #5B5B96;
+    }
+
+    .header__info {
+        display: flex;
+        align-items: center;
+        max-width: 320px;
+        min-height: 69px;
+        flex-shrink: 0;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .glaz {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        flex-shrink: 0;
+        background-color: #6B6BAE;
+    }
+
+    .container__h {
+        display: none;
+    }
+
+    .container__h-mobile {
+        display: block;
+        color: #000;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        max-width: 290px;
+    }
+
+    .gl__img {
+        max-width: 320px;
+        min-height: 99px;
+        flex-shrink: 0;
+    }
+
+    .gl__img img {
+        object-fit: fill;
+    }
+
+    .gosuslugi__img {
+        display: none;
+    }
+
+    .gosuslugi__block {
+        width: 320px;
+        height: 160px;
+        flex-shrink: 0;
+        gap: 20.17px;
+    }
+
+    .gosuslugi__block p {
+        font-size: 14px;
+        width: 184.254px;
+        height: 82.296px;
+        flex-shrink: 0;
+        margin-top: 14.13px;
+    }
+
+    .gosuslugi__block button {
+        width: 184.199px;
+        height: 27.66px;
+        flex-shrink: 0;
+        font-size: 10px;
+        margin-bottom: 15.74px;
+    }
+
+    .info {
+        max-width: 290px;
+    }
+
+    .info__gl-mobile h1 {
+        color: #00006B;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .info ul {
+        font-size: 16px;
+    }
+
+    .info p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .info__gl-mobile {
+        display: block;
+    }
+
+    .info__gl {
+        display: none;
+    }
+
+    .info a {
+        font-size: 16px;
+    }
+
+    #seria_1,
+    #seria_2,
+    #seria_3,
+    #seria_4,
+    #seria_5,
+    #seria_6 {
+        display: none;
+    }
+
+    #seria_7,
+    #seria_8,
+    #seria_9,
+    #seria_10,
+    #seria_11,
+    #seria_12 {
+        display: block;
+    }
+
+    .telephones__img-item {
+        width: 290px;
+        height: 130px;
+        flex-shrink: 0;
+        gap: 0px;
+        padding: 0px;
+    }
+
+    #p_1,
+    #p_2,
+    #p_3 {
+        font-size: 14px;
+    }
+
+    .telephones__img {
+        gap: 15px;
+    }
+
+    #autor_1,
+    #autor_2,
+    #autor_3 {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    #a_5 {
+        font-size: 20px;
+    }
+
+    #spec__tel {
+        font-size: 20px;
+    }
+
+    .container {
+        gap: 15px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    #f_address {
+        font-size: 16px;
+    }
+
+    #f_information {
+        font-size: 12px;
+    }
+
+    .footer__nav-hrefs {
+        flex-wrap: wrap;
+    }
+}
