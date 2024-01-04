@@ -1,58 +1,350 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url("fonts/Montserrat-Bold.ttf");
+}
+
+body {
+    font-family: Montserrat;
+}
+
+/*Хедер*/
 .header {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #5B5B96;
+}
+
+.header__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1110px;
+}
+
+.header h1 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+
+.align-self-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    height: 82px;
 }
 
 .align-self-end button {
     width: 100%;
+    min-height: 34px;
+    flex-shrink: 0;
+    background: #6B6BAE;
+    border: 0px;
 }
 
+/*Навигация*/
 .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #3E3E61;
+    min-height: 41px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    width: 1110px;
+}
+
+.nav__burger {
+    display: flex;
+    align-items: center;
+    width: 37px;
+    height: 37px;
+    flex-shrink: 0;
+    background: #3E3E61;
+    border: 0px;
 }
 
 .nav__button {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
 }
 
+.nav__button a {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+    text-decoration-line: none;
+}
+
+.me-2 {
+    width: 114px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border-left: 1px solid #000;
+    background: #F4F4F4;
+    margin: 0px !important;
+
+    color: rgba(0, 0, 0, 0.39);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.form-control {
+    padding: 5px 6px;
+}
+
+.btn {
+    border: 0px;
+    padding: 0px;
+}
+
+.btn:hover {
+    --bs-btn-hover-color: #6B6BAE;
+    --bs-btn-hover-bg: #6B6BAE;
+    --bs-btn-hover-border-color: #6B6BAE;
+    color: var(--bs-btn-hover-color);
+    background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color);
+}
+
+/*Контейнер*/
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 28px;
+    margin-top: 20px;
+    margin-bottom: 157px;
 }
 
+.container__h {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat-Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 1;
+    line-height: normal;
+    margin: 0px;
+    max-width: 919px;
+}
+
+.gl__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 283px;
+    margin-bottom: 18px;
+}
+
+/*Госуслуги*/
 .gosuslugi {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 0px;
 }
 
 .gosuslugi__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: #38BAFE;
+    width: 559.227px;
     height: 453px;
     flex-shrink: 0;
+    gap: 57.11px;
+}
+
+.gosuslugi__block p {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 322px;
+    height: 233px;
+    margin: 0px;
+}
+
+.gosuslugi__block button {
+    width: 321.902px;
+    height: 78.311px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background: #FFF;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*Сведения*/
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    max-width: 919px;
+    gap: 14px;
+}
+
+.info p {
+    margin: 0px;
+    color: #000;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.info__gl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*width: 919px;*/
+    gap: 5px;
+}
+
+.info__gl h1 {
+    text-align: left;
+    color: #00006B;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+
+.info a {
+    color: #00006B;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.info ul {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    color: #00006B;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0px;
+}
+
+.info ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 0px;
 }
 
 .spacer {
     background: #6B6BAE;
-    width: 100%;
     height: 1px;
     flex-shrink: 0;
+    max-width: 919px;
 }
 
+/*Картинки телефонов*/
 .telephones__img {
     display: flex;
     flex-direction: row;
-    height: 241px;
+    min-height: 241px;
     gap: 33.38px;
+    flex-wrap: wrap;
 }
 
 .telephones__img-item {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     background: #5B5B96;
+    padding-top: 19.4px;
+    padding-bottom: 27.57px;
+    padding-left: 8.3px;
+    padding-right: 8.3px;
+    width: 283.745px;
+    height: 241px;
+    flex-shrink: 0;
+}
+
+.telephones__img-item__h {
+    display: flex;
+    align-items: center;
+    width: 257.04px;
+    height: 60.25px;
+}
+
+#p_1,
+#p_2,
+#p_3 {
+    margin: 0px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+
 }
 
 .telephones__img-item__spacer {
@@ -62,42 +354,133 @@
     background: #FFF;
 }
 
+.telephones__img-item p {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*Специальный телефон*/
+#spec__tel {
+    color: #00006B;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+}
+
 .telephones__href {
     display: flex;
     flex-direction: column;
     gap: 7px;
+
 }
 
+.telephones__href a {
+    color: #00006B;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+/*Карта*/
 .map {
-    display: flex;
-    flex-direction: column;
+    max-width: 919px;
+    min-height: 540px;
+    flex-shrink: 0;
 }
 
+.map img {
+    display: flex;
+    object-fit: cover;
+}
+
+/*Футер*/
 .footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .footer__nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     background: #5B5B96;
+    gap: 40px;
+    width: 100%;
 }
 
 .footer__nav-hrefs {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 107px;
+    justify-content: space-between;
+    margin-top: 45px;
+    width: 919px;
+}
+
+.footer__nav-hrefs a {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: none;
 }
 
 .footer__info {
     display: flex;
     justify-content: center;
     background: #3E3E61;
+    width: 100%;
+}
+
+#f_address {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+    width: 919px;
+}
+
+#f_information {
+    color: #FFF;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+    margin-bottom: 34px;
+    max-width: 1110px;
+}
+
+#f_ps {
+    color: #FFF;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+    margin-top: 6px;
+    margin-bottom: 7px;
 }
