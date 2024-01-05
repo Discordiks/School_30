@@ -15,20 +15,20 @@
     <div class="col-12 header">
         <div class="header__info col-10">
             <div class="header__head align-self-center">
-                <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M3.08334 25.4375C3.08334 24.586 3.77357 23.8958 4.62501 23.8958H9.25001V18.5L18.5 12.3333L27.75 18.5V23.8958H32.375C33.2265 23.8958 33.9167 24.586 33.9167 25.4375V32.375C33.9167 33.2265 33.2265 33.9167 32.375 33.9167H3.08334V25.4375Z"
-                        stroke="white" stroke-width="2" stroke-linejoin="round" />
-                    <path d="M18.5 4.625V12.3333" stroke="white" stroke-width="2" stroke-linecap="round" />
-                    <path
-                        d="M27.75 9.24985V4.62488C27.75 4.62488 26.5937 6.93738 23.125 4.62488C19.6562 2.31238 18.5 4.62488 18.5 4.62488V9.24985C18.5 9.24985 19.6562 6.93738 23.125 9.24985C26.5937 11.5624 27.75 9.24985 27.75 9.24985Z"
-                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M21.5833 33.9167V23.8958H15.4167V33.9167" stroke="white" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M13.875 33.9167H23.125" stroke="white" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-                <h1>Официальный сайт МАОУ СОШ №30</h1>
+
+                <h1><svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.08334 25.4375C3.08334 24.586 3.77357 23.8958 4.62501 23.8958H9.25001V18.5L18.5 12.3333L27.75 18.5V23.8958H32.375C33.2265 23.8958 33.9167 24.586 33.9167 25.4375V32.375C33.9167 33.2265 33.2265 33.9167 32.375 33.9167H3.08334V25.4375Z"
+                            stroke="white" stroke-width="2" stroke-linejoin="round" />
+                        <path d="M18.5 4.625V12.3333" stroke="white" stroke-width="2" stroke-linecap="round" />
+                        <path
+                            d="M27.75 9.24985V4.62488C27.75 4.62488 26.5937 6.93738 23.125 4.62488C19.6562 2.31238 18.5 4.62488 18.5 4.62488V9.24985C18.5 9.24985 19.6562 6.93738 23.125 9.24985C26.5937 11.5624 27.75 9.24985 27.75 9.24985Z"
+                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M21.5833 33.9167V23.8958H15.4167V33.9167" stroke="white" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M13.875 33.9167H23.125" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg> Официальный сайт МАОУ СОШ №30</h1>
             </div>
             <div class="align-self-end">
                 <button>
@@ -52,14 +52,48 @@
     </div>
     <div class="col-12 header__mobile">
         <div class="header__info col-10">
-            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.12793 9.21124H30.7946" stroke="white" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                <path d="M6.12793 18.4612H30.7946" stroke="white" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                <path d="M6.12793 27.7112H30.7946" stroke="white" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.12793 9.21124H30.7946" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M6.12793 18.4612H30.7946" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M6.12793 27.7112H30.7946" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar"
+                        aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Меню сайта</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="/">Главная</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index_news.html">Новости</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="/">Регистрация</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="/">Вход</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="/">Rss</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
             <div class="glaz">
                 <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -114,7 +148,7 @@
                     <path d="M6 14H10.5" stroke="white" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" />
                 </svg>
-                <a href="#">Новости</a>
+                <a href="index_news.html">Новости</a>
             </div>
             <div class="nav__button">
                 <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -170,7 +204,7 @@
             </form>
         </div>
     </div>
-    <div class="container">
+    <div style="margin-bottom: 157px" class="container">
         <h1 class="container__h">
             Приветствуем Вас на официальном сайте<br>
             Муниципального автономного общеобразовательного учреждения средней общеобразовательной школы № 30 города
@@ -343,7 +377,7 @@
                 <li><b>Горячая линия (понедельник-пятница: с 9:30 до 16:30)</b></li>
             </ul>
             <div class="telephones__img">
-                <div class="telephones__img-item">
+                <div class="col-10 telephones__img-item">
                     <div class="telephones__img-item__h">
                         <p id="p_1">О выплатах за классное руководство</p>
                     </div>
@@ -352,7 +386,7 @@
                     <p><a href="tel:+73435363688" id="a_2">8 (3435) 36-36-88</a></p>
                     <p id="autor_1">Сметанина Татьяна Алексеевна</p>
                 </div>
-                <div class="telephones__img-item">
+                <div class="col-10 telephones__img-item">
                     <div class="telephones__img-item__h">
                         <p id="p_2">Об организации образовательного процесса</p>
                     </div>
@@ -361,7 +395,7 @@
                     <p><a href="tel:+73435363695" id="a_3">8 (3435) 36-36-95</a></p>
                     <p id="autor_2">Гавриленко Ирина Ивановна</p>
                 </div>
-                <div class="telephones__img-item">
+                <div class="col-10 telephones__img-item">
                     <div class="telephones__img-item__h">
                         <p id="p_3">Об организации бесплатного питания</p>
                     </div>
@@ -514,11 +548,11 @@
     </div>
     <div class="col-12 footer">
         <div class="col-10 footer__nav">
-            <div class="footer__nav-hrefs">
-                <a href="#">Главная</a>
-                <a href="#">Новости</a>
-                <a href="#">Регистрация</a>
-                <a href="#">Вход</a>
+            <div class="col-10 footer__nav-hrefs">
+                <a href="#">Главная </a>
+                <a href="#">Новости </a>
+                <a href="#">Регистрация </a>
+                <a href="#">Вход </a>
                 <a href="#">Rss</a>
             </div>
             <p id="f_address" class="col-10">Адрес электронной почты: е-mail: <a

@@ -50,14 +50,12 @@
         max-width: 290px;
     }
 
-    .gl__img {
-        max-width: 320px;
-        min-height: 99px;
-        flex-shrink: 0;
+    .spacer {
+        width: 99%;
     }
 
-    .gl__img img {
-        object-fit: fill;
+    .gl__img {
+        max-width: 320px;
     }
 
     .gosuslugi__img {
@@ -89,6 +87,7 @@
 
     .info {
         max-width: 290px;
+        gap: 15px;
     }
 
     .info__gl-mobile h1 {
@@ -180,6 +179,7 @@
 
     #f_address {
         font-size: 16px;
+        margin-top: 11px;
     }
 
     #f_information {
@@ -188,5 +188,13 @@
 
     .footer__nav-hrefs {
         flex-wrap: wrap;
+    }
+
+    .footer__nav {
+        gap: 15px;
+    }
+
+    .footer__nav-hrefs a {
+        font-size: 16px;
     }
 }

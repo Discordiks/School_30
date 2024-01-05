@@ -12,8 +12,6 @@ body {
     font-family: Montserrat;
 }
 
-
-
 /*Хедер*/
 .header {
     display: flex;
@@ -28,6 +26,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     max-width: 1110px;
+    flex-wrap: wrap;
 }
 
 .header h1 {
@@ -45,7 +44,7 @@ body {
     flex-direction: row;
     align-items: center;
     gap: 5px;
-    height: 82px;
+    min-height: 82px;
 }
 
 .align-self-end button {
@@ -53,6 +52,21 @@ body {
     min-height: 34px;
     flex-shrink: 0;
     background: #6B6BAE;
+    border: 0px;
+}
+
+.navbar {
+    padding: 0px;
+    border: 0px;
+}
+
+.container-fluid {
+    padding: 0px;
+    border: 0px;
+}
+
+.navbar-toggler {
+    padding: 0px;
     border: 0px;
 }
 
@@ -71,6 +85,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 1110px;
 }
 
@@ -127,6 +142,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 7px;
+    margin-bottom: 2px;
 }
 
 .form-control {
@@ -155,7 +171,6 @@ body {
     align-items: center;
     gap: 28px;
     margin-top: 20px;
-    margin-bottom: 157px;
 }
 
 .container__h {
@@ -174,8 +189,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 283px;
+    max-width: 919px;
     margin-bottom: 18px;
+}
+
+.gl__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /*Госуслуги*/
@@ -252,7 +273,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /*width: 919px;*/
     gap: 5px;
 }
 
@@ -301,13 +321,15 @@ body {
     background: #6B6BAE;
     height: 1px;
     flex-shrink: 0;
-    width: 99%;
+    width: 90%;
 }
 
 /*Картинки телефонов*/
 .telephones__img {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     min-height: 241px;
     gap: 33.38px;
     flex-wrap: wrap;
@@ -396,12 +418,11 @@ body {
 /*Карта*/
 .map {
     max-width: 919px;
-    min-height: 540px;
-    flex-shrink: 0;
 }
 
 .map img {
-    display: flex;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -429,8 +450,9 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 45px;
-    width: 919px;
+    max-width: 919px;
 }
 
 .footer__nav-hrefs a {
@@ -530,4 +552,124 @@ body {
 #seria_11,
 #seria_12 {
     display: none;
+}
+
+
+
+/*Новости*/
+.news__headers {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#uch_year {
+    color: #00006B;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.news__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.news__header h2 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+
+/*Элементы новостей*/
+.news__list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.news__item {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.news__head {
+    width: 100%;
+    min-height: 38px;
+    background: #6B6BAE;
+}
+
+.news__head p {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+
+.news__info {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.news__img {
+    width: 350px;
+}
+
+.news__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news__text {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.news__text p {
+    color: #000;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+
+.news__text ul {
+    color: #000;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+
+.news__text a {
+    color: #6B6BAE;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+    text-decoration-line: none;
 }
