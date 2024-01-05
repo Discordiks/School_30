@@ -184,6 +184,7 @@
 
     #f_information {
         font-size: 12px;
+        text-align: left;
     }
 
     .footer__nav-hrefs {
@@ -197,4 +198,48 @@
     .footer__nav-hrefs a {
         font-size: 16px;
     }
+
+    /*Новости*/
+    #uch_year {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .news__header h2 {
+        font-size: 20px;
+    }
+
+    .news__header-mobile {
+        display: block;
+    }
+
+    .news__header {
+        display: none;
+    }
+
+    .news__head p {
+        font-size: 20px;
+    }
+
+    .news__text p,
+    .news__text ul,
+    .news__text a {
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .news__list,
+    .news__item,
+    .news__info,
+    .news__text {
+        gap: 15px;
+    }
+
+    #img_1,
+    #img_2,
+    #img_3,
+    #img_4 {
+        width: 290px;
+    }
+
 }

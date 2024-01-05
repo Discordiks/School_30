@@ -8,6 +8,18 @@
     src: url("fonts/Montserrat-Bold.ttf");
 }
 
+@media screen and (max-width:770px) {
+    .news__info {
+        flex-wrap: wrap;
+    }
+
+    .news__img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
 body {
     font-family: Montserrat;
 }
@@ -560,7 +572,9 @@ body {
 .news__headers {
     display: flex;
     flex-direction: column;
+    justify-content: start;
     gap: 12px;
+    max-width: 919px;
 }
 
 #uch_year {
@@ -570,6 +584,7 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin: 0px;
 }
 
 .news__header {
@@ -594,15 +609,19 @@ body {
     display: flex;
     flex-direction: column;
     gap: 28px;
+    max-width: 919px;
 }
 
 .news__item {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 28px;
 }
 
 .news__head {
+    display: flex;
+    align-items: center;
     width: 100%;
     min-height: 38px;
     background: #6B6BAE;
@@ -621,16 +640,34 @@ body {
 .news__info {
     display: flex;
     flex-direction: row;
+    /*flex-wrap: wrap;*/
     gap: 30px;
 }
 
-.news__img {
+#img_1,
+#img_2,
+#img_3,
+#img_4 {
     width: 350px;
 }
 
+#img_1 {
+    height: 466px;
+}
+
+#img_2 {
+    height: 262px;
+}
+
+#img_3 {
+    height: 197px;
+}
+
+#img_4 {
+    height: 465px;
+}
+
 .news__img img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -672,4 +709,74 @@ body {
     line-height: normal;
     margin: 0px;
     text-decoration-line: none;
+}
+
+.news__header-mobile {
+    display: none;
+}
+
+/*Меню*/
+#offcanvasDarkNavbar {
+    background: #3E3E61;
+    box-sizing: content-box;
+}
+
+.offcanvas-title {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.offcanvas-body {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nav-link.active {
+    color: #FFF !important;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.spacer-mob {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #FFF;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.offcanvas {
+    max-width: 160px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.offcanvas-header {
+    padding-bottom: 0px;
+}
+
+.offcanvas-header,
+.offcanvas-body {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.pe-3 {
+    padding: 0px;
+}
+
+.offcanvas.offcanvas-end {
+    border-left: 0px;
 }
